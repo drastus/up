@@ -86,4 +86,8 @@ if [[ -n ${ZSH_VERSION-} ]]; then
 fi
 
 # tab-completion
-complete -o nospace -F _up up
+if [[ -n $BASH_VERSION && (${BASH_VERSINFO[0]} -gt 4 || (${BASH_VERSINFO[0]} -eq 4 && ${BASH_VERSINFO[1]} -ge 4)) ]]; then
+	complete -o nosort -o nospace -F _up up
+else
+	complete -o nospace -F _up up
+fi

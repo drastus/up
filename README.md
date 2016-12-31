@@ -64,10 +64,10 @@ Tab completion:
 
 ```
 /home/chuck/foo/bar/baz/head/foot $ up <TAB>
-bar/    baz/    chuck/  foo/    head/   home/
+home/   chuck/  foo/    bar/    baz/    head/
 
 /home/chuck/foo/bar/baz/head/foot $ up h<TAB>
-head/   home/
+home/   head/
 
 /home/chuck/foo/bar/baz/head/foot $ up ho<TAB>
 /home/chuck/foo/bar/baz/head/foot $ up home/
